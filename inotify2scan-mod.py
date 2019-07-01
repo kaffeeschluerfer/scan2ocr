@@ -12,27 +12,6 @@ import regdate
 
 #TODO: Logging einfügen
 
-'''
-def date_search(ocr_file):
-   
-    if os.path.isfile(ocr_file):
-        pdfText=open(ocr_file, "r").read()
-        regDate = re.compile(r""" #Datum Suchmuster
-        (\d\d?.\d\d?.201\d) #1
-        |
-        ((\d\d).(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember).(\d\d\d\d)) #2
-        |
-        (lalal)
-        """, re.VERBOSE)
-        txtDate=regDate.search(pdfText)
-        print(txtDate.group())
-        return(txtDate.group())
-        #TODO: Datum in Format 20190131 umwandln
-    else:
-        print("Kein Datum gefunden")
-        return("kein_Datum")
-'''
-
 def _main():    
 #TODO: Config File?
     scan_dir = "/mnt/store/Scans" #Scan-Directory
